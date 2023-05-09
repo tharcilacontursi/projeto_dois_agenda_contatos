@@ -4,7 +4,7 @@ const telefone = [];
 let linhas = '';
 
 form.addEventListener('submit', function (e) {
-    e.preventDefault;
+    e.preventDefault();
     addLinha();
     atualizaAgenda();
 
@@ -29,11 +29,11 @@ function addLinha() {
         linhas += linha; 
 
         inputContato.value = '';
-        inputTelefone = '';
+        inputTelefone.value = '';
     }
 }
 
-function atualizaAgenda {
+function atualizaAgenda () {
     const corpoAgenda = document.querySelector('tbody');
     corpoAgenda.innerHTML = linhas; 
 }
